@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard | EV Recharge Bunk</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/user.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>Discover nearby EV recharge bunks below:</p>
+
+
+    <h3>Available Bunks</h3>
+    <div id="bunkList"></div>
+
+    <div style="margin-top: 30px;">
+      <button class="btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+</body>
+</html>
