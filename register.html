@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | EV Recharge Bunk</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form id="registerForm">
+      <div>
+        <input type="email" id="regEmail" placeholder="Email" required />
+      </div>
+      <div>
+        <input type="password" id="regPassword" placeholder="Password" required />
+      </div>
+      <div style="margin: 15px 0;">
+        <label>
+          <input type="radio" name="role" value="user" required /> User
+        </label>
+        <label style="margin-left: 20px;">
+          <input type="radio" name="role" value="admin" required /> Admin
+        </label>
+      </div>
+      <div>
+        <button type="submit" class="btn">Register</button>
+      </div>
+    </form>
+    <p style="margin-top: 20px;">Already have an account? <a href="login.html" style="color: #00ffcc;">Login</a></p>
+    <p id="registerMsg" style="margin-top: 10px;"></p>
+  </div>
+</body>
+</html>
