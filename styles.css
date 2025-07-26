@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image:url('https://s19525.pcdn.co/wp-content/uploads/2021/04/electriccar-1400.jpg');
+  background-size:cover;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Box */
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* Slightly stronger blur */
+  max-width: 600px;
+  width: 90%;
+  color: #ffffff; /* Ensures text is readable */
+}
+/* Headings */
+.container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+.container p {
+  margin-bottom:18px;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+.container h3 {
+  margin-top: 10px;  /* tighten space above */
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color:#ffffff;
+  font-family:monospace;
+  text-decoration:underline;
+}
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  padding: 10px 24px;
+  background-color: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #00ccaa;
+}  
+#bunkList > div {
+  margin-bottom: 24px; /* space between each bunk */
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* optional separator */
+}
+#bunkList > div:last-child {
+  border-bottom: none; /* remove border from the last item */
+}
+#bunkList a {
+  color: #00aaff; /* bright blue */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#bunkList a:hover {
+  text-decoration: underline;
+  color: #0099e6; /* slightly darker blue on hover */
+}
+#bunkList strong {
+  color: #bfff00; 
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: block;
+  margin-top: 12px;
+  text-decoration-line: underline;
+}
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+
